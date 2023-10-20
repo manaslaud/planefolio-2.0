@@ -9,6 +9,7 @@ import { fadeOnBeforeCompile } from "../utils/fadeMaterial";
 import { Airplane } from "./Airplane";
 import { Background } from "./Background";
 import { Cloud } from "./Cloud";
+import Image from "./Image"
 import { TextSection } from "./TextSection";
 
 const LINE_NB_POINTS = 1000;
@@ -29,6 +30,7 @@ export const Experience = () => {
       new THREE.Vector3(0, 0, -5 * CURVE_DISTANCE),
       new THREE.Vector3(0, 0, -6 * CURVE_DISTANCE),
       new THREE.Vector3(0, 0, -7 * CURVE_DISTANCE),
+      new THREE.Vector3(0, 0, -8 * CURVE_DISTANCE),
     ],
     []
   );
@@ -49,7 +51,7 @@ export const Experience = () => {
           curvePoints[1].y,
           curvePoints[1].z
         ),
-        subtitle: `Welcome to Wawatmos,
+        subtitle: `Welcome to my Portfolio,
 Have a seat and enjoy the ride!`,
       },
       {
@@ -59,9 +61,8 @@ Have a seat and enjoy the ride!`,
           curvePoints[2].y,
           curvePoints[2].z
         ),
-        title: "Services",
-        subtitle: `Do you want a drink?
-We have a wide range of beverages!`,
+        title: "About me",
+        subtitle: `I am a creative developer witha focus on creating user centric websites `,
       },
       {
         cameraRailDist: -1,
@@ -70,8 +71,8 @@ We have a wide range of beverages!`,
           curvePoints[3].y,
           curvePoints[3].z
         ),
-        title: "Fear of flying?",
-        subtitle: `Our flight attendants will help you have a great journey`,
+        title: "Some of my work",
+        subtitle: `Have a look at some of my top work`,
       },
       {
         cameraRailDist: 1.5,
@@ -85,6 +86,22 @@ We have a wide range of beverages!`,
       },
     ];
   }, []);
+
+  const images = useMemo(()=>{
+    return [
+      {
+        imagePath:'/images/wawa.svg',
+        position: 
+         [ curvePoints[1].x ,
+          curvePoints[1].y,
+          curvePoints[1].z
+         ]
+      }
+     
+    ]
+  })
+
+
 
   const clouds = useMemo(
     () => [
@@ -501,8 +518,10 @@ We have a wide range of beverages!`,
         <directionalLight position={[0, 3, 1]} intensity={0.1} />
         {/* <OrbitControls /> */}
         <group ref={cameraGroup}>
+        
           <Background backgroundColors={backgroundColors} />
           <group ref={cameraRail}>
+        
             <PerspectiveCamera
               ref={camera}
               position={[0, 0, 5]}
@@ -524,7 +543,8 @@ We have a wide range of beverages!`,
         {textSections.map((textSection, index) => (
           <TextSection {...textSection} key={index} />
         ))}
-
+         
+        <Image imagePath="/images/wawa.svg" position={curvePoints[2]}/>
         {/* LINE */}
         <group position-y={-2}>
           <mesh>

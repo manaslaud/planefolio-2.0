@@ -28,9 +28,7 @@ function App() {
         >
           <Experience />
         </ScrollControls>
-        <EffectComposer>
-          <Noise opacity={0.2} />
-        </EffectComposer>
+       
       </Canvas>
       <Overlay />
     </>
