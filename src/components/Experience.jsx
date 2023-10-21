@@ -81,7 +81,27 @@ Have a seat and enjoy the ride!`,
           curvePoints[4].y,
           curvePoints[4].z - 12
         ),
-        title: "Movies",
+        title: "GraVITas 23",
+        subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
+      },
+      {
+        cameraRailDist: 1.5,
+        position: new Vector3(
+          curvePoints[5].x + 3.5,
+          curvePoints[5].y,
+          curvePoints[5].z - 12
+        ),
+        title: "LaserTag 23",
+        subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
+      },
+      {
+        cameraRailDist: 1.5,
+        position: new Vector3(
+          curvePoints[6].x + 3.5,
+          curvePoints[6].y,
+          curvePoints[6].z - 12
+        ),
+        title: "FFCS Planner",
         subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
       },
     ];
@@ -544,7 +564,10 @@ Have a seat and enjoy the ride!`,
           <TextSection {...textSection} key={index} />
         ))}
          
-        <Image imagePath="/images/wawa.svg" position={curvePoints[2]}/>
+        <Image imagePath="/images/about.jpg" position={[curvePoints[2].x-2,curvePoints[2].y,curvePoints[2].z]}/>
+        <Image imagePath="/images/gravitas.jpg" position={[curvePoints[4].x-2,curvePoints[4].y,curvePoints[4].z]}/>
+        <Image imagePath="/images/lasertag.jpg" position={[curvePoints[5].x-2,curvePoints[5].y,curvePoints[5].z]}/>
+        <Image imagePath="/images/ffcs.jpg" position={[curvePoints[6].x-2,curvePoints[6].y,curvePoints[6].z]}/>
         {/* LINE */}
         <group position-y={-2}>
           <mesh>

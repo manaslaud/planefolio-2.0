@@ -6,7 +6,7 @@ const ImageWithPosition = ({ imagePath, position }) => {
   const texture = useTexture(imagePath);
 
   return (
-    <mesh position={position} scale={[1,1,1]}>
+    <mesh position={position} scale={[2,2,2]}>
       <planeBufferGeometry args={[1, 1]} />
       <meshBasicMaterial map={texture} />
     </mesh>
