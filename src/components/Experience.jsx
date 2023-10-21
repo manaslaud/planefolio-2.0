@@ -82,7 +82,7 @@ Have a seat and enjoy the ride!`,
           curvePoints[4].z - 12
         ),
         title: "GraVITas 23",
-        subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
+        subtitle: `Led a team of developers to create the entire frontend for VIT's infamous GraVITas tech fest for the tear 2023`,
       },
       {
         cameraRailDist: 1.5,
@@ -92,7 +92,7 @@ Have a seat and enjoy the ride!`,
           curvePoints[5].z - 12
         ),
         title: "LaserTag 23",
-        subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
+        subtitle: `A slot booking website with an admin panel for event coordinaters to control the huge influx of participants for GraVITas' most selling event. `,
       },
       {
         cameraRailDist: 1.5,
@@ -102,7 +102,7 @@ Have a seat and enjoy the ride!`,
           curvePoints[6].z - 12
         ),
         title: "FFCS Planner",
-        subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
+        subtitle: `A portal for choosing and creating your own timetable based on the FFCS system for VIT university`,
       },
     ];
   }, []);
