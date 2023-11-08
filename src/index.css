@@ -61,13 +61,13 @@ body {
 .logo {
   font-family: "DM Serif Display", serif;
   color: white;
-  font-size: 8rem;
-  letter-spacing: 0.5rem;
+  font-size: 5rem;
+  letter-spacing: 0.1rem;
   padding: 0;
   margin: 0;
   transform: translateY(-50%);
   position: absolute;
-  top: 50vh;
+  top: 45vh;
   animation: fadeUp 2.4s ease-in-out;
   transition: all 2s ease-in-out;
 }
@@ -129,7 +129,7 @@ body {
   border-radius: 32px;
   cursor: pointer;
   display: inline-block;
-  margin-top: 320px;
+  margin-top: 220px;
   display: inline-block;
   position: relative;
   z-index: 1;
