@@ -73,7 +73,7 @@ Have a seat and enjoy the ride!`,
           curvePoints[3].z
         ),
         title: "Our Goal",
-        subtitle: `Our objective every year!`,
+        subtitle: `Our objectives every year!`,
       },
       {
         cameraRailDist: 1.5,
@@ -83,7 +83,7 @@ Have a seat and enjoy the ride!`,
           curvePoints[4].z - 12
         ),
         title: "LaserTag 2023",
-        subtitle: ``,
+        subtitle: `Laser Tag offers you a chance to step onto the arena for a thrilling multi-player experience.`,
       },
       {
         cameraRailDist: 1.5,
@@ -92,8 +92,8 @@ Have a seat and enjoy the ride!`,
           curvePoints[5].y,
           curvePoints[5].z - 12
         ),
-        title: "LaserTag 23",
-        subtitle: ``,
+        title: "A Thrilling Multiplayer Shooting Experience",
+        subtitle: ` Don your vests and have your guns at the ready, maximize hits to climb up the leaderboard!`,
       },
       {
         cameraRailDist: 1.5,
@@ -575,12 +575,12 @@ Have a seat and enjoy the ride!`,
           <TextSection {...textSection} key={index} />
         ))}
           {/*only change x here for images*/}
-        <Image imagePath="/images/expo-1.jpg" position={[curvePoints[2].x-2,curvePoints[2].y,curvePoints[2].z]}/>
-        <Image imagePath="/images/expo-2.jpg" position={[curvePoints[3].x+2,curvePoints[3].y,curvePoints[3].z]}/>
-        <Image imagePath="/images/lt-1.jpg" position={[curvePoints[4].x-2,curvePoints[4].y,curvePoints[4].z]}/>
-        <Image imagePath="/images/lt-2.jpg" position={[curvePoints[5].x-2,curvePoints[5].y,curvePoints[5].z]}/>
-        <Image imagePath="/images/ft-1.jpg" position={[curvePoints[6].x-2,curvePoints[6].y,curvePoints[6].z]}/>
-        <Image imagePath="/images/ft-2.jpg" position={[curvePoints[7].x-2,curvePoints[7].y,curvePoints[7].z]}/>
+        <Image imagePath="/images/expo-1.jpg" position={[curvePoints[2].x-3,curvePoints[2].y,curvePoints[2].z]}/>
+        <Image imagePath="/images/expo-2.jpg" position={[curvePoints[3].x+3,curvePoints[3].y,curvePoints[3].z]}/>
+        <Image imagePath="/images/lt-1.jpg" position={[curvePoints[4].x-3,curvePoints[4].y,curvePoints[4].z]}/>
+        <Image imagePath="/images/lt-2.jpg" position={[curvePoints[5].x-3,curvePoints[5].y,curvePoints[5].z]}/>
+        <Image imagePath="/images/ft-1.jpg" position={[curvePoints[6].x-3,curvePoints[6].y,curvePoints[6].z]}/>
+        <Image imagePath="/images/ft-2.jpg" position={[curvePoints[7].x-3,curvePoints[7].y,curvePoints[7].z]}/>
         {/* LINE */}
         <group position-y={-2}>
           <mesh>

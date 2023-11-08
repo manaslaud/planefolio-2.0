@@ -6,7 +6,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React, { useRef } from "react";
 
-const HELIX_SPEED = 6;
+const HELIX_SPEED = 12;
 
 export function Airplane(props) {
   const { nodes, materials } = useGLTF("./models/airplane/model.glb");

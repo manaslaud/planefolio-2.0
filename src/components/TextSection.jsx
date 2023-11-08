@@ -27,7 +27,7 @@ export const TextSection = ({ title, subtitle, ...props }) => {
         anchorX={"left"}
         anchorY="top"
         fontSize={0.2}
-        maxWidth={2.5}
+        maxWidth={3.5}
         font={"./fonts/Inter-Regular.ttf"}
       >
         {subtitle}
