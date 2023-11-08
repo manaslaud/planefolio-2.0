@@ -45,16 +45,6 @@ export const Experience = () => {
   const textSections = useMemo(() => {
     return [
       {
-        cameraRailDist: -1,
-        position: new Vector3(
-          curvePoints[1].x - 3,
-          curvePoints[1].y,
-          curvePoints[1].z
-        ),
-        subtitle: `Welcome to CSI,
-Have a seat and enjoy the ride!`,
-      },
-      {
         cameraRailDist: 1.5,
         position: new Vector3(
           curvePoints[2].x + 2,
@@ -475,7 +465,7 @@ Have a seat and enjoy the ride!`,
 
   const tl = useRef();
   const backgroundColors = useRef({
-    colorA: "#3535cc",
+    colorA: "#0D75F8",
     colorB: "#abaadd",
   });
 
@@ -487,8 +477,8 @@ Have a seat and enjoy the ride!`,
 
     tl.current.to(backgroundColors.current, {
       duration: 1,
-      colorA: "#6f35cc",
-      colorB: "#ffad30",
+      colorA: "#610BB2",
+      colorB: "#F7461D",
     });
     tl.current.to(backgroundColors.current, {
       duration: 1,

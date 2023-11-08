@@ -10,7 +10,7 @@ const HELIX_SPEED = 12;
 
 export function Airplane(props) {
   const { nodes, materials } = useGLTF("./models/airplane/model.glb");
-
+console.log(materials)
   const helix = useRef();
 
   useFrame((_state, delta) => {
@@ -20,7 +20,7 @@ export function Airplane(props) {
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.PUSHILIN_Plane_Circle000.geometry}>
-        <meshStandardMaterial color="white" />
+        <meshStandardMaterial map={materials.plane.map} />
       </mesh>
       <mesh
         ref={helix}
@@ -28,7 +28,7 @@ export function Airplane(props) {
         material={materials.plane}
         position={[1.09, 0.23, 0]}
       >
-        <meshStandardMaterial color="white" />
+        <meshStandardMaterial  map={materials.plane.map}/>
       </mesh>
     </group>
   );
