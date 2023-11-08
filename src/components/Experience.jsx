@@ -92,8 +92,8 @@ export const Experience = () => {
           curvePoints[6].y,
           curvePoints[6].z - 12
         ),
-        title: "ForkThis",
-        subtitle: `A portal for choosing and creating your own timetable based on the FFCS system for VIT university`,
+        title: "ForkThis 2023",
+        subtitle: `CSI-VIT presents ForkThis, a workshop where you learn and contribute to the world of open-source with zero prerequisites.`,
       },
       {
         cameraRailDist: 1.5,
@@ -102,8 +102,8 @@ export const Experience = () => {
           curvePoints[7].y,
           curvePoints[7].z - 12
         ),
-        title: "ForkThis",
-        subtitle: `A portal for choosing and creating your own timetable based on the FFCS system for VIT university`,
+        title: "ForkThis 2023",
+        subtitle: ` Resolve issues, eliminate errors, and stand a chance to win exciting prizes. Collaborate with developers, learn new skills, and take Hacktoberfest by storm!`,
       },
     ];
   }, []);
@@ -482,13 +482,13 @@ export const Experience = () => {
     });
     tl.current.to(backgroundColors.current, {
       duration: 1,
-      colorA: "#424242",
-      colorB: "#ffcc00",
+      colorA: "#610BB2",
+      colorB: "#F7461D",
     });
     tl.current.to(backgroundColors.current, {
       duration: 1,
-      colorA: "#81318b",
-      colorB: "#55ab8f",
+      colorA: "#6237D0",
+      colorB: "#645057",
     });
 
     tl.current.pause();
