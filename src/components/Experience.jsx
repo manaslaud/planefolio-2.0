@@ -31,6 +31,7 @@ export const Experience = () => {
       new THREE.Vector3(0, 0, -6 * CURVE_DISTANCE),
       new THREE.Vector3(0, 0, -7 * CURVE_DISTANCE),
       new THREE.Vector3(0, 0, -8 * CURVE_DISTANCE),
+      new THREE.Vector3(0, 0, -9 * CURVE_DISTANCE),
     ],
     []
   );
@@ -51,8 +52,8 @@ export const Experience = () => {
           curvePoints[2].y,
           curvePoints[2].z
         ),
-        title: "About CSI",
-        subtitle: `The Computer Society of India -VIT Chapter is part of one India's oldest and largest bodies of computer enthusiasts. With a plethora of events being conducted each year and an accomplished alumni base, CSI plays a pivotal role in advancing VIT's tech community.
+        title: "About me",
+        subtitle: `Hello there! I'm Manas, a Creative Web developer interested in technologies like Three.js and WebGL to create immersive web experiences. I also take interest in data analysis and web3 technologies.
         `,
       },
       {
@@ -62,8 +63,8 @@ export const Experience = () => {
           curvePoints[3].y,
           curvePoints[3].z
         ),
-        title: "Our Goal",
-        subtitle: `Our objectives every year!`,
+        title: "My work",
+        subtitle: `Check out some of my recent work`,
       },
       {
         cameraRailDist: 1.5,
@@ -73,7 +74,7 @@ export const Experience = () => {
           curvePoints[4].z - 12
         ),
         title: "LaserTag 2023",
-        subtitle: `Laser Tag offers you a chance to step onto the arena for a thrilling multi-player experience.`,
+        subtitle: `I built an online portal for streamlining slot booking for event participants and also included an admin panel for the event coordinators`,
       },
       {
         cameraRailDist: 1.5,
@@ -82,8 +83,8 @@ export const Experience = () => {
           curvePoints[5].y,
           curvePoints[5].z - 12
         ),
-        title: "A Thrilling Multiplayer Shooting Experience",
-        subtitle: ` Don your vests and have your guns at the ready, maximize hits to climb up the leaderboard!`,
+        title: "FFCS Planner",
+        subtitle: `A timetable management system for the FFCS System , based on VIT University's acadmic architeture.`,
       },
       {
         cameraRailDist: 1.5,
@@ -92,8 +93,8 @@ export const Experience = () => {
           curvePoints[6].y,
           curvePoints[6].z - 12
         ),
-        title: "ForkThis 2023",
-        subtitle: `CSI-VIT presents ForkThis, a workshop where you learn and contribute to the world of open-source with zero prerequisites.`,
+        title: "GraVITas 23 ",
+        subtitle: `I was once of the lead frontend devs for building the frontend for VIT Vellore's infamous techfest for the year 2023`,
       },
       {
         cameraRailDist: 1.5,
@@ -102,8 +103,21 @@ export const Experience = () => {
           curvePoints[7].y,
           curvePoints[7].z - 12
         ),
-        title: "ForkThis 2023",
-        subtitle: ` Resolve issues, eliminate errors, and stand a chance to win exciting prizes. Collaborate with developers, learn new skills, and take Hacktoberfest by storm!`,
+        title: "Other works:",
+        subtitle: `A list of my other work.`,
+      },
+      {
+        cameraRailDist: 1.5,
+        position: new Vector3(
+          curvePoints[8].x + 3,
+          curvePoints[8].y,
+          curvePoints[8].z - 12
+        ),
+        title: "Contact information:",
+        subtitle: `Have an awesome idea? Let's build on it!
+        Github:@manaslaud
+        LinkedIn:@manaslaud
+        Instagram:@manaslaud`,
       },
     ];
   }, []);
@@ -565,13 +579,12 @@ export const Experience = () => {
           <TextSection {...textSection} key={index} />
         ))}
           {/*only change x here for images*/}
-        <Image imagePath="/images/expo-1.jpg" position={[curvePoints[2].x-3,curvePoints[2].y,curvePoints[2].z]}/>
-        <Image imagePath="/images/expo-2.jpg" position={[curvePoints[3].x+3,curvePoints[3].y,curvePoints[3].z]}/>
-        <Image imagePath="/images/lt-1.jpg" position={[curvePoints[4].x-3,curvePoints[4].y,curvePoints[4].z]}/>
-        <Image imagePath="/images/lt-2.jpg" position={[curvePoints[5].x-3,curvePoints[5].y,curvePoints[5].z]}/>
-        <Image imagePath="/images/ft-1.jpg" position={[curvePoints[6].x-3,curvePoints[6].y,curvePoints[6].z]}/>
-        <Image imagePath="/images/ft-2.jpg" position={[curvePoints[7].x-3,curvePoints[7].y,curvePoints[7].z]}/>
-        {/* LINE */}
+        <Image imagePath="/images/about.jpg" position={[curvePoints[2].x-3,curvePoints[2].y,curvePoints[2].z]} link="https://www.linkedin.com/in/manas-laud-5183a5254/"/>
+
+        <Image imagePath="/images/lasertag.jpg" position={[curvePoints[4].x-3,curvePoints[4].y,curvePoints[4].z]} link="https://lasertag.csivit.com/"/>
+        <Image imagePath="/images/ffcs.jpg" position={[curvePoints[5].x-3,curvePoints[5].y,curvePoints[5].z]} link="https://ffcs.csivit.com/"/>
+        <Image imagePath="/images/gravitas.jpg" position={[curvePoints[6].x-3,curvePoints[6].y,curvePoints[6].z]} link="https://gravitas.vit.ac.in/"/>
+        <Image imagePath="/images/morework.jpg" position={[curvePoints[7].x-3,curvePoints[7].y,curvePoints[7].z]} link="https://animation-text-6a3s.vercel.app/"/>
         <group position-y={-2}>
           <mesh>
             <extrudeGeometry

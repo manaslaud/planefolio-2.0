@@ -15,10 +15,10 @@ export const Overlay = () => {
       {progress === 100 && (
         <div className={`intro ${play ? "intro--disappear" : ""}`}>
           <h1 className="logo">
-            Computer Society Of India
+            Manas Laud
             
           </h1>
-          <p className="intro__scroll">Scroll to begin the journey</p>
+          <p className="intro__scroll">A relaxing journey through my work, click on the images!</p>
           <button
             className="explore"
             onClick={() => {
@@ -30,7 +30,7 @@ export const Overlay = () => {
         </div>
       )}
       <div className={`outro ${end ? "outro--appear" : ""}`}>
-        <p className="outro__text">Wish you had a great flight with us...</p>
+        <p className="outro__text">Let's connect and collaborate!</p>
       </div>
     </div>
   );
