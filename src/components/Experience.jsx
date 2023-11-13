@@ -45,24 +45,15 @@ export const Experience = () => {
   const textSections = useMemo(() => {
     return [
       {
-        cameraRailDist: -1,
-        position: new Vector3(
-          curvePoints[1].x - 3,
-          curvePoints[1].y,
-          curvePoints[1].z
-        ),
-        subtitle: `Welcome to my Portfolio,
-Have a seat and enjoy the ride!`,
-      },
-      {
         cameraRailDist: 1.5,
         position: new Vector3(
           curvePoints[2].x + 2,
           curvePoints[2].y,
           curvePoints[2].z
         ),
-        title: "About me",
-        subtitle: `I am a creative developer witha focus on creating user centric websites `,
+        title: "About CSI",
+        subtitle: `The Computer Society of India -VIT Chapter is part of one India's oldest and largest bodies of computer enthusiasts. With a plethora of events being conducted each year and an accomplished alumni base, CSI plays a pivotal role in advancing VIT's tech community.
+        `,
       },
       {
         cameraRailDist: -1,
@@ -71,8 +62,8 @@ Have a seat and enjoy the ride!`,
           curvePoints[3].y,
           curvePoints[3].z
         ),
-        title: "Some of my work",
-        subtitle: `Have a look at some of my top work`,
+        title: "Our Goal",
+        subtitle: `Our objectives every year!`,
       },
       {
         cameraRailDist: 1.5,
@@ -81,8 +72,8 @@ Have a seat and enjoy the ride!`,
           curvePoints[4].y,
           curvePoints[4].z - 12
         ),
-        title: "GraVITas 23",
-        subtitle: `Led a team of developers to create the entire frontend for VIT's infamous GraVITas tech fest for the tear 2023`,
+        title: "LaserTag 2023",
+        subtitle: `Laser Tag offers you a chance to step onto the arena for a thrilling multi-player experience.`,
       },
       {
         cameraRailDist: 1.5,
@@ -91,8 +82,8 @@ Have a seat and enjoy the ride!`,
           curvePoints[5].y,
           curvePoints[5].z - 12
         ),
-        title: "LaserTag 23",
-        subtitle: `A slot booking website with an admin panel for event coordinaters to control the huge influx of participants for GraVITas' most selling event. `,
+        title: "A Thrilling Multiplayer Shooting Experience",
+        subtitle: ` Don your vests and have your guns at the ready, maximize hits to climb up the leaderboard!`,
       },
       {
         cameraRailDist: 1.5,
@@ -101,8 +92,18 @@ Have a seat and enjoy the ride!`,
           curvePoints[6].y,
           curvePoints[6].z - 12
         ),
-        title: "FFCS Planner",
-        subtitle: `A portal for choosing and creating your own timetable based on the FFCS system for VIT university`,
+        title: "ForkThis 2023",
+        subtitle: `CSI-VIT presents ForkThis, a workshop where you learn and contribute to the world of open-source with zero prerequisites.`,
+      },
+      {
+        cameraRailDist: 1.5,
+        position: new Vector3(
+          curvePoints[7].x + 3.5,
+          curvePoints[7].y,
+          curvePoints[7].z - 12
+        ),
+        title: "ForkThis 2023",
+        subtitle: ` Resolve issues, eliminate errors, and stand a chance to win exciting prizes. Collaborate with developers, learn new skills, and take Hacktoberfest by storm!`,
       },
     ];
   }, []);
@@ -464,7 +465,7 @@ Have a seat and enjoy the ride!`,
 
   const tl = useRef();
   const backgroundColors = useRef({
-    colorA: "#3535cc",
+    colorA: "#0D75F8",
     colorB: "#abaadd",
   });
 
@@ -476,18 +477,18 @@ Have a seat and enjoy the ride!`,
 
     tl.current.to(backgroundColors.current, {
       duration: 1,
-      colorA: "#6f35cc",
-      colorB: "#ffad30",
+      colorA: "#610BB2",
+      colorB: "#F7461D",
     });
     tl.current.to(backgroundColors.current, {
       duration: 1,
-      colorA: "#424242",
-      colorB: "#ffcc00",
+      colorA: "#610BB2",
+      colorB: "#F7461D",
     });
     tl.current.to(backgroundColors.current, {
       duration: 1,
-      colorA: "#81318b",
-      colorB: "#55ab8f",
+      colorA: "#6237D0",
+      colorB: "#645057",
     });
 
     tl.current.pause();
@@ -563,11 +564,13 @@ Have a seat and enjoy the ride!`,
         {textSections.map((textSection, index) => (
           <TextSection {...textSection} key={index} />
         ))}
-         
-        <Image imagePath="/images/about.jpg" position={[curvePoints[2].x-2,curvePoints[2].y,curvePoints[2].z]}/>
-        <Image imagePath="/images/gravitas.jpg" position={[curvePoints[4].x-2,curvePoints[4].y,curvePoints[4].z]}/>
-        <Image imagePath="/images/lasertag.jpg" position={[curvePoints[5].x-2,curvePoints[5].y,curvePoints[5].z]}/>
-        <Image imagePath="/images/ffcs.jpg" position={[curvePoints[6].x-2,curvePoints[6].y,curvePoints[6].z]}/>
+          {/*only change x here for images*/}
+        <Image imagePath="/images/expo-1.jpg" position={[curvePoints[2].x-3,curvePoints[2].y,curvePoints[2].z]}/>
+        <Image imagePath="/images/expo-2.jpg" position={[curvePoints[3].x+3,curvePoints[3].y,curvePoints[3].z]}/>
+        <Image imagePath="/images/lt-1.jpg" position={[curvePoints[4].x-3,curvePoints[4].y,curvePoints[4].z]}/>
+        <Image imagePath="/images/lt-2.jpg" position={[curvePoints[5].x-3,curvePoints[5].y,curvePoints[5].z]}/>
+        <Image imagePath="/images/ft-1.jpg" position={[curvePoints[6].x-3,curvePoints[6].y,curvePoints[6].z]}/>
+        <Image imagePath="/images/ft-2.jpg" position={[curvePoints[7].x-3,curvePoints[7].y,curvePoints[7].z]}/>
         {/* LINE */}
         <group position-y={-2}>
           <mesh>
