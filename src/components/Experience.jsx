@@ -74,7 +74,7 @@ export const Experience = () => {
           curvePoints[4].z - 12
         ),
         title: "GraVITas 2023",
-        subtitle: `I was once of the lead frontend devs for building the frontend for VIT Vellore's infamous techfest for the year 2023`,
+        subtitle: `I was one of the lead frontend devs for building the frontend for VIT Vellore's infamous techfest for the year 2023`,
       },
       {
         cameraRailDist: 1.5,
