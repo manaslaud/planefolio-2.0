@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter&display=swap");
 @font-face {
   font-family: fontOne;
-  src: url("/fonts/Pacifico-Regular.ttf") format('truetype');
+  src: url("/fonts/Helvetica.ttf") format('truetype');
 }
 
 #root {

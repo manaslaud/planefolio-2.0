@@ -73,8 +73,8 @@ export const Experience = () => {
           curvePoints[4].y,
           curvePoints[4].z - 12
         ),
-        title: "LaserTag 2023",
-        subtitle: `I built an online portal for streamlining slot booking for event participants and also included an admin panel for the event coordinators`,
+        title: "GraVITas 2023",
+        subtitle: `I was once of the lead frontend devs for building the frontend for VIT Vellore's infamous techfest for the year 2023`,
       },
       {
         cameraRailDist: 1.5,
@@ -83,8 +83,8 @@ export const Experience = () => {
           curvePoints[5].y,
           curvePoints[5].z - 12
         ),
-        title: "FFCS Planner",
-        subtitle: `A timetable management system for the FFCS System , based on VIT University's acadmic architeture.`,
+        title: "LaserTag 23",
+        subtitle: `I built an online portal for streamlining slot booking for event participants and also included an admin panel for the event coordinators`,
       },
       {
         cameraRailDist: 1.5,
@@ -93,8 +93,8 @@ export const Experience = () => {
           curvePoints[6].y,
           curvePoints[6].z - 12
         ),
-        title: "GraVITas 23 ",
-        subtitle: `I was once of the lead frontend devs for building the frontend for VIT Vellore's infamous techfest for the year 2023`,
+        title: "Gdrive 3.0",
+        subtitle: `A blockchain based IPFS file sharing system built on the Ethereum blockhain.`,
       },
       {
         cameraRailDist: 1.5,
@@ -367,7 +367,7 @@ export const Experience = () => {
 
     const scrollOffset = Math.max(0, scroll.offset);
 
-    let friction = 1;
+    let friction = 3;
     let resetCameraRail = true;
     // LOOK TO CLOSE TEXT SECTIONS
     textSections.forEach((textSection) => {
@@ -581,9 +581,9 @@ export const Experience = () => {
           {/*only change x here for images*/}
         <Image imagePath="/images/about.jpg" position={[curvePoints[2].x-3,curvePoints[2].y,curvePoints[2].z]} link="https://www.linkedin.com/in/manas-laud-5183a5254/"/>
 
-        <Image imagePath="/images/lasertag.jpg" position={[curvePoints[4].x-3,curvePoints[4].y,curvePoints[4].z]} link="https://lasertag.csivit.com/"/>
-        <Image imagePath="/images/ffcs.jpg" position={[curvePoints[5].x-3,curvePoints[5].y,curvePoints[5].z]} link="https://ffcs.csivit.com/"/>
-        <Image imagePath="/images/gravitas.jpg" position={[curvePoints[6].x-3,curvePoints[6].y,curvePoints[6].z]} link="https://gravitas.vit.ac.in/"/>
+        <Image imagePath="/images/gravitas.jpg" position={[curvePoints[4].x-3,curvePoints[4].y,curvePoints[4].z]} link="https://gravitas.vit.ac.in/"/>
+        <Image imagePath="/images/lasertag.jpg" position={[curvePoints[5].x-3,curvePoints[5].y,curvePoints[5].z]} link="https://lasertag.csivit.com/"/>
+        <Image imagePath="/images/gdrive.jpg" position={[curvePoints[6].x-3,curvePoints[6].y,curvePoints[6].z]} link="https://file-share-peach.vercel.app/"/>
         <Image imagePath="/images/morework.jpg" position={[curvePoints[7].x-3,curvePoints[7].y,curvePoints[7].z]} link="https://animation-text-6a3s.vercel.app/"/>
         <group position-y={-2}>
           <mesh>
