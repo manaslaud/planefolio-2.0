@@ -83,8 +83,8 @@ export const Experience = () => {
           curvePoints[5].y,
           curvePoints[5].z - 12
         ),
-        title: "LaserTag 23",
-        subtitle: `I built an online portal for streamlining slot booking for event participants and also included an admin panel for the event coordinators`,
+        title: "Boltshift",
+        subtitle: `A decentralized peer to peer loaning system built on the Ethereum blockchain using Solidty, Hardhat and Next.js`,
       },
       {
         cameraRailDist: 1.5,
@@ -93,8 +93,8 @@ export const Experience = () => {
           curvePoints[6].y,
           curvePoints[6].z - 12
         ),
-        title: "Gdrive 3.0",
-        subtitle: `A blockchain based IPFS file sharing system built on the Ethereum blockhain.`,
+        title: "LaserTag 23",
+        subtitle: `I built an online portal for streamlining slot booking for event participants and also included an admin panel for the event coordinators`,
       },
       {
         cameraRailDist: 1.5,
@@ -103,15 +103,25 @@ export const Experience = () => {
           curvePoints[7].y,
           curvePoints[7].z - 12
         ),
+        title: "Gdrive 3.0",
+        subtitle: `A blockchain based IPFS file sharing system built on the Ethereum blockhain.`,
+      },
+      {
+        cameraRailDist: 1.5,
+        position: new Vector3(
+          curvePoints[8].x + 3.5,
+          curvePoints[8].y,
+          curvePoints[8].z - 12
+        ),
         title: "Other works:",
         subtitle: `A list of my other work.`,
       },
       {
         cameraRailDist: 1.5,
         position: new Vector3(
-          curvePoints[8].x + 3,
-          curvePoints[8].y,
-          curvePoints[8].z - 12
+          curvePoints[9].x + 3,
+          curvePoints[9].y,
+          curvePoints[9].z - 12
         ),
         title: "Contact information:",
         subtitle: `Have an awesome idea? Let's build on it!
@@ -122,19 +132,19 @@ export const Experience = () => {
     ];
   }, []);
 
-  const images = useMemo(()=>{
-    return [
-      {
-        imagePath:'/images/wawa.svg',
-        position: 
-         [ curvePoints[1].x ,
-          curvePoints[1].y,
-          curvePoints[1].z
-         ]
-      }
+  // const images = useMemo(()=>{
+  //   return [
+  //     {
+  //       imagePath:'/images/wawa.svg',
+  //       position: 
+  //        [ curvePoints[1].x ,
+  //         curvePoints[1].y,
+  //         curvePoints[1].z
+  //        ]
+  //     }
      
-    ]
-  })
+  //   ]
+  // })
 
 
 
@@ -582,9 +592,10 @@ export const Experience = () => {
         <Image imagePath="/images/about.jpg" position={[curvePoints[2].x-3,curvePoints[2].y,curvePoints[2].z]} link="https://www.linkedin.com/in/manas-laud-5183a5254/"/>
 
         <Image imagePath="/images/gravitas.jpg" position={[curvePoints[4].x-3,curvePoints[4].y,curvePoints[4].z]} link="https://gravitas.vit.ac.in/"/>
-        <Image imagePath="/images/lasertag.jpg" position={[curvePoints[5].x-3,curvePoints[5].y,curvePoints[5].z]} link="https://lasertag.csivit.com/"/>
-        <Image imagePath="/images/gdrive.jpg" position={[curvePoints[6].x-3,curvePoints[6].y,curvePoints[6].z]} link="https://file-share-peach.vercel.app/"/>
-        <Image imagePath="/images/morework.jpg" position={[curvePoints[7].x-3,curvePoints[7].y,curvePoints[7].z]} link="https://animation-text-6a3s.vercel.app/"/>
+        <Image imagePath="/images/boltshift.png" position={[curvePoints[5].x-3,curvePoints[5].y,curvePoints[5].z]} link="https://srm-hack.vercel.app/"/>
+        <Image imagePath="/images/lasertag.jpg" position={[curvePoints[6].x-3,curvePoints[6].y,curvePoints[6].z]} link="https://lasertag.csivit.com/"/>
+        <Image imagePath="/images/gdrive.jpg" position={[curvePoints[7].x-3,curvePoints[7].y,curvePoints[7].z]} link="https://file-share-peach.vercel.app/"/>
+        <Image imagePath="/images/morework.jpg" position={[curvePoints[8].x-3,curvePoints[8].y,curvePoints[8].z]} link="https://animation-text-6a3s.vercel.app/"/>
         <group position-y={-2}>
           <mesh>
             <extrudeGeometry
