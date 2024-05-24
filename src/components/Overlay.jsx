@@ -30,7 +30,10 @@ export const Overlay = () => {
         </div>
       )}
       <div className={`outro ${end ? "outro--appear" : ""}`}>
-        <p className="outro__text">Let's connect and collaborate!</p>
+        <p className="outro__text">Let's connect and collaborate! <br />
+        Github: @manaslaud <br />
+        LinkedIn: @manaslaud <br />
+        </p>
       </div>
     </div>
   );

@@ -190,6 +190,7 @@ body {
 .outro__text {
   font-family: 'fontOne', sans-serif;
   font-size: 3rem;
+  text-align: center;
   color: white;
 }
 

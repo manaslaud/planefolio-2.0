@@ -17,7 +17,7 @@ const CURVE_DISTANCE = 250;
 const CURVE_AHEAD_CAMERA = 0.008;
 const CURVE_AHEAD_AIRPLANE = 0.02;
 const AIRPLANE_MAX_ANGLE = 35;
-const FRICTION_DISTANCE = 42;
+const FRICTION_DISTANCE = 100;
 
 export const Experience = () => {
   const curvePoints = useMemo(
@@ -116,19 +116,7 @@ export const Experience = () => {
         title: "Other works:",
         subtitle: `A list of my other work.`,
       },
-      {
-        cameraRailDist: 1.5,
-        position: new Vector3(
-          curvePoints[9].x + 3,
-          curvePoints[9].y,
-          curvePoints[9].z - 12
-        ),
-        title: "Contact information:",
-        subtitle: `Have an awesome idea? Let's build on it!
-        Github:@manaslaud
-        LinkedIn:@manaslaud
-        Instagram:@manaslaud`,
-      },
+      
     ];
   }, []);
 
@@ -345,8 +333,8 @@ export const Experience = () => {
       camera.current.position.z = 5;
     } else {
       // PORTRAIT
-      camera.current.fov = 80;
-      camera.current.position.z = 2;
+      camera.current.fov = 100;
+      camera.current.position.z = 1.7;
     }
 
     if (lastScroll.current <= 0 && scroll.offset > 0) {
